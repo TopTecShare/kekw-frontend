@@ -1,0 +1,404 @@
+.App {
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-image: url("../public/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100%;
+  /* background-attachment: fixed; */
+  padding: 0 3em 4em;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 4em;
+}
+
+/* Main part */
+
+.main-content {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 4em;
+}
+
+p,
+.paragraph {
+  font-family: "Campton Bold";
+  margin: 0;
+  font-size: 28px;
+}
+p.p-title {
+  font-family: "Impact";
+  -webkit-text-stroke: 1px black;
+}
+
+span {
+  font-weight: bold;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+}
+
+button {
+  background-color: transparent;
+  font-size: 30px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.title {
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 135%;
+}
+.second-text {
+  margin-top: 20px;
+  display: block;
+}
+
+.phone {
+  margin-right: 0px;
+  margin-right: 60px;
+  text-align: left;
+}
+.minting-soon {
+  padding-top: 40px;
+}
+.minting-soon p {
+  background: #bc48ff;
+  color: black;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+.minting-soon span {
+  font-family: "Arimo";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.view-contract {
+  font-family: "Arimo";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+.phone-main {
+  margin-right: 3em;
+}
+
+.mint {
+  background-size: 100%;
+  padding: 10px 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mint-select {
+  justify-content: center;
+  margin: 30px 0;
+}
+.mint-select p {
+  margin: 0 3em;
+}
+
+.mint-supply {
+  text-align: center;
+}
+
+.opensea {
+  font-family: "Arimo";
+  font-weight: 700;
+  color: #fff;
+  background: #bc48ff;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.opensea:hover {
+  background-color: #1e6185;
+}
+
+.mint-btn {
+  font-family: "Arimo";
+  font-weight: 700;
+  color: #fff;
+  background: #bc48ff;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.mint-btn:hover {
+  background-color: #1e6185;
+}
+
+.img-content {
+  padding-left: 3em;
+  text-align: center;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+.land {
+  z-index: 2;
+  margin: -30px 0 0;
+}
+
+.contacts img {
+  width: 40px;
+  height: 40px;
+  /* margin: 0 15px; */
+}
+
+.contacts a {
+  margin: 0 10px;
+}
+
+#mom {
+  width: 70%;
+
+  border: 19px solid #bc48ff;
+  filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+}
+
+.mint-amount {
+  margin-top: 30px;
+}
+
+.mint-amount .sold-out {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.phone-content p {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 120%;
+  padding-bottom: 20px;
+}
+.phone-content span {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 1900px) {
+  .App-header {
+    padding: 0 3em 7em;
+  }
+  .phone-content p {
+    font-size: 40px;
+  }
+  .phone-content span {
+    font-size: 20px;
+  }
+  .minting-soon p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header {
+    padding: 1em 0;
+  }
+  .main-content {
+    padding: 1em 0;
+  }
+  .phone-content p {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .phone-content span {
+    font-size: 20px;
+  }
+  .minting-soon p {
+    font-size: 30px;
+  }
+  .phone {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .phone-main {
+    margin-right: 0;
+  }
+}
+@media (max-width: 930px) {
+  .phone {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  .App-header {
+    height: 100%;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mint-select {
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .phone {
+    background: none;
+    height: auto;
+    margin: 0;
+  }
+  .phone-main {
+    display: none;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .img-content {
+    padding-left: 0em;
+  }
+  #mom {
+    width: 90%;
+  }
+  .phone-main {
+    margin-right: 0;
+  }
+  .phone-content p {
+    font-size: 34px;
+  }
+  .minting-soon {
+    padding-bottom: 40px;
+  }
+  .mint-select p {
+    margin: 0 1em;
+  }
+  .mobile-view {
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: auto;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mint-amount .sold-out {
+    font-size: 30px;
+  }
+  .phone-content p {
+    font-size: 26px;
+  }
+  .phone-content span {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 20px;
+    font-family: Impact;
+  }
+}
+
+.verdana {
+  font-family: "Verdana" !important;
+}
+
+.waiting {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 80px;
+}
+
+@media (max-width: 1550px) {
+  .waiting {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .waiting {
+    font-size: large;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .waiting {
+    font-size: large;
+  }
+}
+
+@media (max-width: 830px) {
+  .waiting {
+    font-size: 30px;
+
+    padding: 10px 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .waiting,
+  .minting-soon p {
+    font-size: smaller;
+    padding: 10px 20px;
+  }
+}
